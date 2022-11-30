@@ -1,0 +1,33 @@
+.content {
+    @include box;
+    padding:0 20px 20px 20px ;
+    display: flex;
+    flex-direction: column;
+    .about-me {
+        margin-bottom: 40px;
+    }
+    .experience-work {
+        flex: 1 0;
+        .post{
+            font-size: 21px;
+            text-decoration:underline;
+            margin-top: 5px;
+        }
+        p{
+            margin-top: 8px;
+        }
+        .sales-manager-globino {
+            margin-top: 20px;
+        }
+        
+        .sales-manager-ppb {
+            margin-top: 20px;
+        }
+        .sales-manager-ABinbev {
+            margin-top: 20px;
+        }
+
+
+    }
+   
+}

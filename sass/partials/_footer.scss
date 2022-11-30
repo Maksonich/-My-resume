@@ -1,0 +1,26 @@
+footer {
+	@include box;
+	border-top: solid 1px #000;
+	padding:30px  0;
+	.link-social {
+		display: flex;
+		justify-content: center;
+		a{
+			margin-right: 40px;
+			overflow: hidden;
+			&:last-child{
+				margin-right: 0;
+			}
+			
+			img{
+				width: 25px;
+				height: 25px;
+			}
+		}
+		
+	}
+}
+.additionally{
+	margin-top: 20px;
+	text-align: center;
+}

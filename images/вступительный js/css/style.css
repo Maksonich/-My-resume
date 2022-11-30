@@ -1,0 +1,26 @@
+.first {
+  background-color: lightblue;
+  margin: 20px;
+  padding: 20px;
+}
+.calculator {
+  width: 300px;
+}
+.block {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.buttons {
+  margin: 10px 5px 5px 0;
+  width: 30%;
+  height: 30px;
+}
+.operator {
+  width: 20px;
+  height: 20px;
+  margin: 10px 0;
+}
+.result {
+  margin-top: 20px;
+}
