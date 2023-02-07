@@ -1,93 +1,90 @@
-main{
+.flex{
     display: flex;
     @media (max-width:650px){
-		flex-direction: column;
-       
-	}
-}
-aside{
-    @include box;
-    width:650px;
-    padding: 10px;
-    border-right: solid 1px #000;
-    @media (max-width:650px){
-        margin-bottom: 30px;
-        width: auto;
-        padding: 5px;
-        border-right: none;
+        flex-direction: column;
+
     }
-    .competence {
-        h3{
-            margin-left: 15px;
+    aside{
+        @include box;
+        width:650px;
+        padding: 10px;
+        border-right: 1px solid rgba(0, 0, 0, 0.1);
+        @media (max-width:650px){
+            margin-bottom: 30px;
+            width: auto;
+            padding: 5px;
+            border-right: none;
         }
-        li{
-            margin: 0 0 5px 30px;
-            padding-left: 5px;
-            list-style: '✔';
-            
-        }
-    }
-    .education {
-        h3{
-            margin-left: 15px;
-        }
-        li{
-            margin:  0 0 5px 30px;
-            padding-left: 5px;
-            list-style: '✔';
-            &:last-child{
-               max-width: 450px;
+        .competence {
+            h3{
+                margin-left: 15px;
+            }
+            li{
+                margin: 0 0 5px 30px;
+                padding-left: 5px;
+                list-style: '✔';
+                span{
+                    font-size: 13px;
+                }
+
             }
         }
-    }
-    .language{
-        h3{
-            margin-left: 15px;
-        }
-        li{
-        position: relative;
-        top: 0;left: 0;
-        margin: 0 0 5px 15px;
-        span{
-            font-size: 16px;
-        }
-        }
-    }
-    .full::after{
-        content: '★★★★★';
-        color: $starColor;
-
-        position: absolute;
-        top: 0;
-        left: 90px;
-    }
-    .middle::after{
-        content: '★★';
-        color: $starColor;
-
-        position: absolute;
-        top: 0;
-        left: 90px;
-    }
-    .contacts {
-        h3{
-            margin-left: 15px;
-        }
-        img{
-            margin-right: 15px;
-            width: 25px;
-            height: 20px;
-        }
-        li{
-            display: flex;
-            justify-content:left;
-            align-items: center;
-            margin: 0 0 8px 13px;
-        }
-        a{
-            
-            color: #000;
-        }
         
-    }	
+        .language{
+            h3{
+                margin-left: 15px;
+            }
+            li{
+            position: relative;
+            top: 0;left: 0;
+            margin: 0 0 5px 15px;
+            span{
+                font-size: 13px;
+            }
+            }
+        }
+        .full::after{
+            content: '★★★★★';
+            color: $starColor;
+
+            position: absolute;
+            top: 0;
+            left: 90px;
+        }
+        .middle::after{
+            content: '★★';
+            color: $starColor;
+
+            position: absolute;
+            top: 0;
+            left: 90px;
+        }
+        .contacts {
+            h3{
+                margin-left: 15px;
+            }
+            img{
+                margin-right: 15px;
+                width: 25px;
+                height: 20px;
+            }
+            li{
+                display: flex;
+                justify-content:left;
+                align-items: center;
+                margin: 0 0 8px 13px;
+                &.link{
+                    a{
+                        text-decoration:underline;
+                    }
+                }
+            }
+            a{
+                
+                color: #000;
+            }
+            
+        }	
+    }
 }
+ 

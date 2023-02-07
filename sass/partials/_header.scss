@@ -1,8 +1,7 @@
 header{
-	padding: 30px 0 0 30px;
 	display: flex;
-	align-items: start;
-	overflow: visible;
+
+	padding:  30px 30px 0 30px;
 	@media (max-width:650px){
 		flex-direction: column;
 		align-items: center;
@@ -43,15 +42,16 @@ header{
 	}
 	}
 	.name_and_career{
-
+		
 		@media (max-width:650px){
 			padding: 10px;
 			margin-bottom: 20px;
 		}
 		h2{
 			font-family: 'Patua One';
-			font-size: 40px;
+			font-size: 50px;
 			margin: 30px 0;
+			
 		}
 		p{
 			background-color: rgb(0, 37, 107);
@@ -73,6 +73,7 @@ header{
 
 	}
 	
+
 }
 	
 

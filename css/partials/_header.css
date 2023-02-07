@@ -1,0 +1,72 @@
+header {
+  padding: 30px 0 0 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: start;
+  overflow: visible; }
+  @media (max-width: 650px) {
+    header {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      padding: 30px 0 0  0; } }
+  header .my-photo {
+    margin-right: 100px;
+    width: 300px;
+    height: 225px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 20px #000;
+    box-shadow: 0px 0px 20px #000;
+    position: relative; }
+    @media (max-width: 787px) {
+      header .my-photo {
+        margin-right: 50px; } }
+    @media (max-width: 721px) {
+      header .my-photo {
+        margin-right: 20px; } }
+    @media (max-width: 650px) {
+      header .my-photo {
+        margin-right: 0px;
+        width: 500px;
+        height: 375px; } }
+    @media (max-width: 530px) {
+      header .my-photo {
+        width: 400px;
+        height: 300px; } }
+    @media (max-width: 422px) {
+      header .my-photo {
+        width: 300px;
+        height: 225px; } }
+    header .my-photo img {
+      border-radius: 10px;
+      width: 100%;
+      height: 100%; }
+  @media (max-width: 650px) {
+    header .name_and_career {
+      padding: 10px;
+      margin-bottom: 20px; } }
+  header .name_and_career h2 {
+    font-family: 'Patua One';
+    font-size: 40px;
+    margin: 30px 0; }
+  header .name_and_career p {
+    background-color: #00256b;
+    width: 180px;
+    height: 36px;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    padding: 7px 0;
+    text-align: center;
+    color: aliceblue;
+    border-radius: 2px; }
+    @media (max-width: 650px) {
+      header .name_and_career p {
+        text-align: center;
+        width: auto; } }

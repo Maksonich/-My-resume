@@ -1,0 +1,80 @@
+.portfolio ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .portfolio ul li {
+    width: 350px;
+    height: 300px;
+    margin: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .portfolio ul li a {
+      display: block; }
+      .portfolio ul li a .wrap {
+        -webkit-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        -webkit-transform: perspective(100rem);
+        transform: perspective(100rem);
+        cursor: pointer; }
+      .portfolio ul li a .container {
+        width: 100%;
+        height: 100%;
+        height: 300px;
+        border: 1px solid var(--background-color);
+        border: radius 25px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        position: relative;
+        -webkit-transform: rotateX(calc(var(--rX) * 1deg)) rotateY(calc(var(--rY) * 1deg));
+        transform: rotateX(calc(var(--rX) * 1deg)) rotateY(calc(var(--rY) * 1deg));
+        background-position: var(--bX) var(--bY);
+        -webkit-box-shadow: 0 0 3rem 0.5rem rgba(247, 244, 244, 0.144);
+        box-shadow: 0 0 3rem 0.5rem rgba(247, 244, 244, 0.144);
+        -webkit-transition: -webkit-transform .6s 1s;
+        transition: -webkit-transform .6s 1s;
+        -o-transition: transform .6s 1s;
+        transition: transform .6s 1s;
+        transition: transform .6s 1s, -webkit-transform .6s 1s; }
+      .portfolio ul li a .container::before,
+      .portfolio ul li a .container::after {
+        content: "";
+        border: 1px solid white;
+        position: absolute;
+        z-index: 2;
+        opacity: .5;
+        -webkit-transition: .3s;
+        -o-transition: .3s;
+        transition: .3s; }
+      .portfolio ul li a .container::before {
+        top: 2rem;
+        right: 2rem;
+        border-bottom-width: 0;
+        border-left-width: 0; }
+      .portfolio ul li a .container::after {
+        bottom: 2rem;
+        left: 2rem;
+        border-top-width: 0;
+        border-right-width: 0; }
+      .portfolio ul li a .container--active {
+        -webkit-transition: none;
+        -o-transition: none;
+        transition: none; }
+      .portfolio ul li a .container img {
+        display: block; }
+      .portfolio ul li a .wrap:hover .container::before,
+      .portfolio ul li a .wrap:hover .container::after {
+        width: calc(100% - 4rem);
+        height: calc(100% - 4rem); }

@@ -26,8 +26,8 @@ body{
 .wrapper {
 	width:1280px;
 	margin: auto;
-	height:100%;
-	box-shadow: 0px 0px 10px #000;
+	// height:100vh;
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
 	border-radius: 10px;
 	@media (max-width:1310px){
 		width: 98%;
